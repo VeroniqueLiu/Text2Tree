@@ -6,8 +6,11 @@ package com.mxgraph.analysis;
 import java.util.Hashtable;
 import java.util.Map;
 
+<<<<<<< HEAD
 a little change
 
+=======
+>>>>>>> temp
 /**
  * Implements a union find structure that uses union by rank and path
  * compression. The union by rank guarantees worst case find time of O(log N),

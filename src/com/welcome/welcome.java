@@ -12,9 +12,6 @@ import javax.swing.JFrame;
 import com.mxgraph.swing.mxGraphComponent;
 import com.mxgraph.view.mxGraph;
 
-
-
-
 class MatrixDG {
 
     String[] mVexs;       // 
@@ -31,7 +28,9 @@ class MatrixDG {
     	}
     }
     int vlen=0;
-    
+
+    int m=0;
+
     
 }
 public class welcome extends JFrame{
@@ -59,12 +58,16 @@ public class welcome extends JFrame{
 				//System.out.print(ns+"\n");
 				if (ns.equals("*")==false)
 				{
-					v[i]=graph.insertVertex(parent, null, m.mVexs[i], 500+Math.sqrt(i)*f, 30*i,80, 30,"shape=ellipse;perimeter=ellipsePerimeter");
+
+					v[i]=graph.insertVertex(parent, null, m.mVexs[i], 500+Math.sqrt(i)*f, 20*i,80, 30,"shape=ellipse;perimeter=ellipsePerimeter");
+
 				
 				}
 				else
 				{
-					v[i]=graph.insertVertex(parent, null, m.mVexs[i], 500+Math.sqrt(i)*f, 30*i,80, 30,"shape=ellipse;strokeColor=red;fillColor=green");
+
+					v[i]=graph.insertVertex(parent, null, m.mVexs[i], 500+Math.sqrt(i)*f, 20*i,80, 30,"shape=ellipse;strokeColor=red;fillColor=green");
+
 				}
 				f=-f;
 				k=k+0.05;
@@ -91,8 +94,7 @@ public class welcome extends JFrame{
 			}
 			
 			
-			
-			//graph.insertEdge(parent, null, "Edge", v1, v2);
+		
 		}
 		finally
 		{
@@ -108,26 +110,18 @@ public class welcome extends JFrame{
 		
 		String filename=null;
 		MatrixDG mtx;
-		//mtx=createDirectedGraph( filename);		//creating graph
-		//String s=" 2 \n";
-		//s=calcShortestPath(mtx,"to","and");
-		//showDirectedGraph(mtx);					//showing graph
-		//s=randomWalk(mtx);
-		//showDirectedGraph(mtx);
-	//	System.out.print(s);
-		
-		
+	
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Input the File:");
 		filename=sc.nextLine();
 		mtx=createDirectedGraph(filename);	
-		
-		//show g
+	
 		
 		
 		String choice="0";
-		
+
 		System.out.println("1:show the Graph.  2:search bridge words.  3:build new text.  4:shortest path.  5:random walk\n");
+
 		choice=sc.nextLine();
 		if(choice.equals("1")){
 			showDirectedGraph(mtx);

@@ -11,8 +11,11 @@ import com.mxgraph.view.mxCellState;
 import com.mxgraph.view.mxGraph;
 import com.mxgraph.view.mxGraphView;
 
+<<<<<<< HEAD
 youcannot
 
+=======
+>>>>>>> temp
 public class mxEdgeLabelLayout extends mxGraphLayout
 {
 

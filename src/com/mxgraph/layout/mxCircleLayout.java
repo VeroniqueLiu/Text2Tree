@@ -7,8 +7,11 @@ import com.mxgraph.model.mxIGraphModel;
 import com.mxgraph.util.mxRectangle;
 import com.mxgraph.view.mxGraph;
 
+<<<<<<< HEAD
 123
 
+=======
+>>>>>>> temp
 public class mxCircleLayout extends mxGraphLayout
 {
 

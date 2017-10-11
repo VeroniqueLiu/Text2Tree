@@ -15,8 +15,11 @@ import com.mxgraph.view.mxCellState;
 import com.mxgraph.view.mxGraph;
 import com.mxgraph.view.mxGraphView;
 
+<<<<<<< HEAD
 helloworld
 
+=======
+>>>>>>> temp
 public class mxCompactTreeLayout extends mxGraphLayout
 {
 
