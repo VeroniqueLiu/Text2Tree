@@ -6,7 +6,7 @@ import java.lang.*;
 import java.lang.System;
 import java.lang.String;
 import java.util.Scanner;
-import java.io .*;
+import java.io.*;
 
 /*revise the import*/
 
@@ -19,7 +19,7 @@ class MatrixDG {
 
     String[] mVexs;       // 
     int[][] mMatrix;    // 
-    MatrixDG(int v)	//v is the number of vertexes
+    MatrixDG(int v)	
     {
     	mMatrix=new int[v+1][v+1];
     	for (int i=0;i<=v;i++)
@@ -120,7 +120,10 @@ public class welcome extends JFrame{
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Input the File:");
 		filename=sc.nextLine();
-		mtx=createDirectedGraph(filename);	
+		mtx=createDirectedGraph(filename);
+	
+		
+		System.out.println("This is a test");
 		
 		//show g
 		
